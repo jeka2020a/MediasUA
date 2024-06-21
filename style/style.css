@@ -1,0 +1,270 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0 auto;
+}
+.flex__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 60px;
+}
+.header {
+    max-width: 100%;
+    background-image: url("../images/main-screen__bgc.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    box-shadow: 0px 0px 15px #000;
+    margin-bottom: 150px;
+}
+.header__menu-mobile {
+    display: none;
+    max-width: 100%;
+    color: #FFF;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    padding: 0px 40px 20px 0px;
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0px 0px 15px #000;
+}
+.header__logo-img {
+    max-width: 200px;
+}
+.header__menu {
+    max-width: 100%;
+    padding: 24px 0px;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 15px #000;
+}
+.header__menu-mobile, .header__burger {
+    display: none;
+}
+.header__link , .found__link{
+    color: #FFF;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+.facebook {
+    margin-right: 20px;
+}
+.header__contacts {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 120px;
+}
+.header__text {
+    display: block;
+    max-width: 700px;
+    color: #FFF;
+    margin-top: 150px;
+}
+.header__textbox {
+    padding-bottom: 200px; 
+}
+.header__form {
+    padding: 24px 0px;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0px 0px 15px #000;
+}
+.header__formtext {
+    font-family: 'Roboto', sans-serif;
+    font-family: 400;
+    color: #FFF;
+    font-style: italic;
+}
+.header__formlink {
+    display: block;
+    text-decoration: none;
+    color: #FFF;
+    padding: 10px 30px;
+    background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+    border-radius: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+.services__title {
+    text-align: center;
+}
+.services__category {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 386px 386px 386px;  /*************************************************************************/
+    grid-template-rows: 250px;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+.services__box {
+    display: block;
+    box-shadow: 0px 0px 5px #000;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFF;
+    padding: 40px 40px;
+    max-width: 400px;
+    height: 250px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: inset 0px 0px 100px #000000;
+}
+.services__box-title {
+    align-items: center;
+    font-weight: 300px;
+    text-shadow: 0px 0px 5px #000;
+}
+.services__box-text {
+    text-shadow: 0px 0px 5px #000;
+}
+.service__sales {
+    background-image: url("../images/buy_pc.png");
+}
+.service__magazine {
+    background-image: url("../images/internet-magazin.png");
+}
+.service__fix {
+    background-image: url("../images/remont_pc.jpg");
+}
+.companys { 
+    margin-top: 150px;
+    background: linear-gradient(130deg, #DF5950, #451046);
+    padding-top: 50px;
+    box-shadow: 0px 0px 15px #000;
+    padding-bottom: 50px;
+    margin-bottom: 150px;
+}
+.companys__title {
+    text-align: center;
+    color: #FFF;
+}
+.companys__icon {
+    width: 150px;
+    height: 100px;
+}
+.companys__icon-transcend {
+    height: 30px;
+}
+.companys__icon-kingston {
+    height: 30px;
+}
+.companys__icons {
+    background-color: #FFF;
+    align-items: center;
+    padding: 20px 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px #000;
+}
+.companys__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.center {
+    margin-bottom: 150px;
+}
+.center__title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.center__text {
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 500;
+    font-size: 20px;
+}
+.center__icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.center__icon {
+    width: 200px;
+}
+#icon1 {
+    height: 80px;
+    border-radius: 5px;
+}
+#icon2 {
+    border-radius: 10px;
+}
+#icon3 {
+    height: 120px;
+}
+.found {
+    background: linear-gradient(130deg, #451046 , #000);
+    padding-top: 50px;
+    box-shadow: 0px 0px 15px #000;
+    padding-bottom: 50px;
+}
+.found__title {
+    color: #FFF;
+    text-align: center;
+}
+.found__map {
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px #000;
+}
+.found__box {
+    display: flex;
+    justify-content: space-between;
+}
+.found__address {
+    color: #FFF;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+.found__box {
+    align-items: center;
+}
+.found__grafic {
+    max-width: 150px;
+    display: block;
+    margin: 0 auto;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+}
+.found__line {
+    border: 1px solid #FFF;
+    margin-bottom: 20px;
+}
+.found__contacts {
+    display: flex;
+    justify-content: space-between;
+}
+.found__information-title {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+.found__email {
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: #FFF;
+}

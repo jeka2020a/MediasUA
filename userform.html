@@ -1,0 +1,66 @@
+<?php
+    require_once "db/db.php";
+    /*
+
+    $query__email = mysqli_query($db_connection , "SELECT `email` FROM `admin__information`");
+    $query__result__email = mysqli_fetch_assoc($query__email);
+    foreach ($query__result__email as $result__email)
+
+    $phone = $_POST['phone'];
+    $email = $_POST['email'];
+    $name = $_POST['name'];
+    $surname = $_POST['surname'];
+    $message = $_POST['message'];
+
+    /*
+    $full__message = $phone . "\n" . $email . "\n" . "$name $surname" . "\n" . $message;
+
+    $send__to = $result__email;
+    $subject__of = "Повідомлення у Media-Service";
+    $message__to__email = $_POST['message__to__email'];                     OLD____VERSION____CODE
+    $button = $_POST['button'];
+    
+    if (isset($_POST['button']))
+    {
+        for ($i = 0; $i<1 ; ++$i)
+        {
+            mail($send__to , $subject__of , $full__message);
+        }
+    }
+    *//*
+    if (isset($_POST['button']))
+    {
+       mysqli_query($db_connection , "INSERT INTO `users__information`(`phone`,`email`,`name`,`surname`,`message`) VALUES('$phone','$email','$name','$surname','$message');");
+    }*/
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/userform.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,400&display=swap" rel="stylesheet">
+    <title>user-form</title>
+</head>
+<body>
+    <section class="formbox">
+        <div class="container">
+            <form method="POST" action="" class="form">
+                <h2 class="form__title">Form</h2>
+                <input type="phone" class="form__input form__element" name="phone" placeholder="      телефон" required>
+                <input type="email" class="form__input form__element" name="email" placeholder="      email" required>
+                <input type="name" class="form__input form__element" name="name" placeholder="       ім'я" required>
+                <input type="surname" class="form__input form__element" name="surname" placeholder="       прізвище" required>
+                <textarea class="form__textarea form__element" name="message" id="" cols="30" rows="5" placeholder="тут ви можете записати , пояснити коротко про проблему вашого пристрою (необов'язково):"></textarea>
+                <button class="form__button form__element" name="button">записатися на сеанс</button>
+                <a href="index.php" class="form__link form__element">на головну сторінку</a>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
